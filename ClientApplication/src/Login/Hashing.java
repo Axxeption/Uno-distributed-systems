@@ -21,9 +21,6 @@ public class Hashing {
     private static final int ITERATIONS = 10000;
     private static final int KEY_LENGTH = 256;
 
-    /**
-     * static utility class
-     */
     public Hashing() {
     }
 

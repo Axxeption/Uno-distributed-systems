@@ -31,7 +31,7 @@ public class DatabaseServerMain {
         // TODO code application logic here
         DatabaseServerMain databaseservermain = new DatabaseServerMain();
         databaseservermain.startServer();
-        
+                
     }
     
 }
