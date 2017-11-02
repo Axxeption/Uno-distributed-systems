@@ -16,15 +16,11 @@ import javafx.stage.Stage;
  * @author vulst
  */
 public class ClientMain extends Application {
-
+    UNO_UIController u = new UNO_UIController();
     @Override
     public void start(Stage stage) throws Exception {
 //        Parent root = FXMLLoader.load(getClass().getResource("UNO_UI.fxml"));
-        Parent root = FXMLLoader.load(getClass().getResource("GameRoom.fxml"));
-
-        Scene scene = new Scene(root);
-        stage.setScene(scene);
-        stage.show();
+        u.start(stage);
     }
 
     public static void main(String[] args) {
