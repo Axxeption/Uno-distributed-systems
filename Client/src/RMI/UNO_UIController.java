@@ -54,7 +54,8 @@ public class UNO_UIController implements Initializable {
     }
 
     public void start(Stage stage) throws IOException {
-        root = FXMLLoader.load(getClass().getResource("UNO_UI.fxml"));
+        //altijd eerst naar de login page
+        root = FXMLLoader.load(getClass().getResource("Lobby.fxml"));
         scene = new Scene(root);
         this.window = stage;
         this.window.setScene(scene);
@@ -64,19 +65,13 @@ public class UNO_UIController implements Initializable {
 
     public void login(ActionEvent event) throws IOException {
         try {
-                        System.out.println(window);
-
-            root = FXMLLoader.load(getClass().getResource("GameRoom.fxml"));
-            scene = new Scene(root);
-//            System.out.println(scene);
-//            System.out.println(window);
-            window.setScene(scene);
-
-
 //            connect();
 //            if (clientapplicationbackend.login(input_username.getText(), input_password.getText())) {
-//                outputLabel.setText("Succesfully logged in.");
-//
+                outputLabel.setText("Succesfully logged in.");
+                root = FXMLLoader.load(getClass().getResource("Lobby.fxml"));
+                scene = new Scene(root);
+                window.setScene(scene);
+
 //            } else {
 //                outputLabel.setText("Wrong username or pass, try again!");
 //            }
