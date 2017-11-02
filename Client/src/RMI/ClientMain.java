@@ -19,7 +19,9 @@ public class ClientMain extends Application {
 
     @Override
     public void start(Stage stage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("UNO_UI.fxml"));
+//        Parent root = FXMLLoader.load(getClass().getResource("UNO_UI.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("GameRoom.fxml"));
+
         Scene scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
@@ -27,6 +29,8 @@ public class ClientMain extends Application {
 
     public static void main(String[] args) {
         launch(args); //start UI
+        //om te testen
+
     }
 
 }
