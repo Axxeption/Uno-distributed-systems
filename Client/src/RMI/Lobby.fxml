@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.paint.*?>
 <?import javafx.scene.text.*?>
 <?import java.lang.*?>
 <?import java.util.*?>
@@ -11,7 +12,7 @@
    <children>
       <ListView fx:id="waitingGames" layoutX="57.0" layoutY="205.0" prefHeight="528.0" prefWidth="414.0" AnchorPane.bottomAnchor="70.0" AnchorPane.leftAnchor="50.0" />
       <ListView fx:id="lastPlayedGames" layoutX="615.0" layoutY="205.0" prefHeight="245.0" prefWidth="509.0" AnchorPane.rightAnchor="50.0" />
-      <Text layoutX="136.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome, please choose a game at the left to play UNO!" textAlignment="CENTER" wrappingWidth="1010.15869140625">
+      <Text fill="#b8b4b4" layoutX="136.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome, please choose a game at the left to play UNO!" textAlignment="CENTER" wrappingWidth="1010.15869140625">
          <font>
             <Font size="35.0" />
          </font>
